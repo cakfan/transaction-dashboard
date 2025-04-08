@@ -7,8 +7,172 @@
 
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-amber-50">
-    <h1 class="text-9xl">Hello World!</h1>
+  <body>
+    <!-- Sidbar -->
+    <aside class="w-[290px] h-screen bg-white">
+      <div class="flex flex-col items-center mt-[50px] ml-[65px] mr-[66px]">
+        <div class="h-[90px] w-[90px] rounded-full overflow-hidden">
+          <img
+            src="./assets/images/thumbnails/avatar.png"
+            alt=""
+            class="object-cover"
+          />
+        </div>
+        <h1 class="mt-5 text-xl font-bold leading-[30px]">Shayna Anne</h1>
+        <p class="mt-1 text-[16px] text-accent leading-6">shayna@anne.com</p>
+      </div>
+      <nav class="mt-[52px] ml-[30px]">
+        <ul class="flex flex-col gap-[30px] w-full">
+          <li>
+            <a href="#" class="group w-full flex items-center gap-4 h-[30px]">
+              <div
+                class="relative h-6 w-6 transition-all duration-300 mask-[url('./assets/images/icons/fi_grid.svg')] mask-no-repeat mask-contain bg-accent group-hover:bg-sidebar-active-icon"
+              >
+                <img
+                  src="./assets/images/icons/fi_grid.svg"
+                  alt=""
+                  class="h-6 w-6 opacity-0"
+                />
+              </div>
+              <span
+                class="w-fit text-accent text-lg leading-[27px] transition-all duration-300 group-hover:text-primary group-hover:font-medium"
+              >
+                Overview
+              </span>
+              <span
+                class="ml-auto h-[30px] w-[3px] bg-sidebar-indicator opacity-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group w-full flex items-center gap-4 h-[30px]">
+              <div
+                class="relative h-6 w-6 transition-all duration-300 mask-[url('./assets/images/icons/fi_shopping-bag.svg')] mask-no-repeat mask-contain bg-sidebar-active-icon"
+              >
+                <img
+                  src="./assets/images/icons/fi_shopping-bag.svg"
+                  alt=""
+                  class="h-6 w-6 opacity-0"
+                />
+              </div>
+              <span
+                class="w-fit text-lg leading-[27px] transition-all duration-300 text-primary font-medium"
+              >
+                Transactions
+              </span>
+              <span class="ml-auto h-[30px] w-[3px] bg-sidebar-indicator" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group w-full flex items-center gap-4 h-[30px]">
+              <div
+                class="relative h-6 w-6 transition-all duration-300 mask-[url('./assets/images/icons/fi_message-circle.svg')] mask-no-repeat mask-contain bg-accent group-hover:bg-sidebar-active-icon"
+              >
+                <img
+                  src="./assets/images/icons/fi_message-circle.svg"
+                  alt=""
+                  class="h-6 w-6 opacity-0"
+                />
+              </div>
+              <span
+                class="w-fit text-accent text-lg leading-[27px] transition-all duration-300 group-hover:text-primary group-hover:font-medium"
+              >
+                Messages
+              </span>
+              <span
+                class="ml-auto h-[30px] w-[3px] bg-sidebar-indicator opacity-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group w-full flex items-center gap-4 h-[30px]">
+              <div
+                class="relative h-6 w-6 transition-all duration-300 mask-[url('./assets/images/icons/fi_credit-card.svg')] mask-no-repeat mask-contain bg-accent group-hover:bg-sidebar-active-icon"
+              >
+                <img
+                  src="./assets/images/icons/fi_credit-card.svg"
+                  alt=""
+                  class="h-6 w-6 opacity-0"
+                />
+              </div>
+              <span
+                class="w-fit text-accent text-lg leading-[27px] transition-all duration-300 group-hover:text-primary group-hover:font-medium"
+              >
+                Card
+              </span>
+              <span
+                class="ml-auto h-[30px] w-[3px] bg-sidebar-indicator opacity-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group w-full flex items-center gap-4 h-[30px]">
+              <div
+                class="relative h-6 w-6 transition-all duration-300 mask-[url('./assets/images/icons/fi_award.svg')] mask-no-repeat mask-contain bg-accent group-hover:bg-sidebar-active-icon"
+              >
+                <img
+                  src="./assets/images/icons/fi_award.svg"
+                  alt=""
+                  class="h-6 w-6 opacity-0"
+                />
+              </div>
+              <span
+                class="w-fit text-accent text-lg leading-[27px] transition-all duration-300 group-hover:text-primary group-hover:font-medium"
+              >
+                Rewards
+              </span>
+              <span
+                class="ml-auto h-[30px] w-[3px] bg-sidebar-indicator opacity-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group w-full flex items-center gap-4 h-[30px]">
+              <div
+                class="relative h-6 w-6 transition-all duration-300 mask-[url('./assets/images/icons/fi_settings.svg')] mask-no-repeat mask-contain bg-accent group-hover:bg-sidebar-active-icon"
+              >
+                <img
+                  src="./assets/images/icons/fi_settings.svg"
+                  alt=""
+                  class="h-6 w-6 opacity-0"
+                />
+              </div>
+              <span
+                class="w-fit text-accent text-lg leading-[27px] transition-all duration-300 group-hover:text-primary group-hover:font-medium"
+              >
+                Settings
+              </span>
+              <span
+                class="ml-auto h-[30px] w-[3px] bg-sidebar-indicator opacity-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group w-full flex items-center gap-4 h-[30px]">
+              <div
+                class="relative h-6 w-6 transition-all duration-300 mask-[url('./assets/images/icons/fi_power.svg')] mask-no-repeat mask-contain bg-accent group-hover:bg-sidebar-active-icon"
+              >
+                <img
+                  src="./assets/images/icons/fi_power.svg"
+                  alt=""
+                  class="h-6 w-6 opacity-0"
+                />
+              </div>
+              <span
+                class="w-fit text-accent text-lg leading-[27px] transition-all duration-300 group-hover:text-primary group-hover:font-medium"
+              >
+                Log Out
+              </span>
+              <span
+                class="ml-auto h-[30px] w-[3px] bg-sidebar-indicator opacity-0"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- Main -->
+    <main class="">Main</main>
     <script src="./js/main.js"></script>
   </body>
 </html>

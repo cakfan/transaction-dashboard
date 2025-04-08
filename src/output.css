@@ -1,4 +1,6 @@
 /*! tailwindcss v4.1.3 | MIT License | https://tailwindcss.com */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -6,9 +8,22 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-50: oklch(97.1% 0.013 17.38);
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-amber-50: oklch(98.7% 0.022 95.277);
-    --text-9xl: 8rem;
-    --text-9xl--line-height: 1;
+    --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-amber-700: oklch(55.5% 0.163 48.998);
+    --color-blue-50: oklch(97% 0.014 254.604);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -159,14 +174,240 @@
   }
 }
 @layer utilities {
+  .relative {
+    position: relative;
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
+  .mt-5 {
+    margin-top: calc(var(--spacing) * 5);
+  }
+  .mt-\[50px\] {
+    margin-top: 50px;
+  }
+  .mt-\[52px\] {
+    margin-top: 52px;
+  }
+  .mr-\[66px\] {
+    margin-right: 66px;
+  }
+  .ml-\[30px\] {
+    margin-left: 30px;
+  }
+  .ml-\[65px\] {
+    margin-left: 65px;
+  }
+  .ml-auto {
+    margin-left: auto;
+  }
   .contents {
     display: contents;
   }
-  .bg-amber-50 {
-    background-color: var(--color-amber-50);
+  .flex {
+    display: flex;
   }
-  .text-9xl {
-    font-size: var(--text-9xl);
-    line-height: var(--tw-leading, var(--text-9xl--line-height));
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .h-\[30px\] {
+    height: 30px;
+  }
+  .h-\[90px\] {
+    height: 90px;
+  }
+  .h-screen {
+    height: 100vh;
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+  .w-\[3px\] {
+    width: 3px;
+  }
+  .w-\[90px\] {
+    width: 90px;
+  }
+  .w-\[290px\] {
+    width: 290px;
+  }
+  .w-fit {
+    width: fit-content;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-\[30px\] {
+    gap: 30px;
+  }
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .bg-accent {
+    background-color: var(--accent);
+  }
+  .bg-sidebar-active-icon {
+    background-color: var(--sidebar-active-icon);
+  }
+  .bg-sidebar-indicator {
+    background-color: var(--sidebar-indicator);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .mask-\[url\(\'\.\/assets\/images\/icons\/fi_award\.svg\'\)\] {
+    mask-image: url('./assets/images/icons/fi_award.svg');
+  }
+  .mask-\[url\(\'\.\/assets\/images\/icons\/fi_credit-card\.svg\'\)\] {
+    mask-image: url('./assets/images/icons/fi_credit-card.svg');
+  }
+  .mask-\[url\(\'\.\/assets\/images\/icons\/fi_grid\.svg\'\)\] {
+    mask-image: url('./assets/images/icons/fi_grid.svg');
+  }
+  .mask-\[url\(\'\.\/assets\/images\/icons\/fi_message-circle\.svg\'\)\] {
+    mask-image: url('./assets/images/icons/fi_message-circle.svg');
+  }
+  .mask-\[url\(\'\.\/assets\/images\/icons\/fi_power\.svg\'\)\] {
+    mask-image: url('./assets/images/icons/fi_power.svg');
+  }
+  .mask-\[url\(\'\.\/assets\/images\/icons\/fi_settings\.svg\'\)\] {
+    mask-image: url('./assets/images/icons/fi_settings.svg');
+  }
+  .mask-\[url\(\'\.\/assets\/images\/icons\/fi_shopping-bag\.svg\'\)\] {
+    mask-image: url('./assets/images/icons/fi_shopping-bag.svg');
+  }
+  .mask-contain {
+    mask-size: contain;
+  }
+  .mask-no-repeat {
+    mask-repeat: no-repeat;
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-\[16px\] {
+    font-size: 16px;
+  }
+  .leading-6 {
+    --tw-leading: calc(var(--spacing) * 6);
+    line-height: calc(var(--spacing) * 6);
+  }
+  .leading-\[27px\] {
+    --tw-leading: 27px;
+    line-height: 27px;
+  }
+  .leading-\[30px\] {
+    --tw-leading: 30px;
+    line-height: 30px;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .text-accent {
+    color: var(--accent);
+  }
+  .text-primary {
+    color: var(--primary);
+  }
+  .opacity-0 {
+    opacity: 0%;
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .group-hover\:bg-sidebar-active-icon {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-color: var(--sidebar-active-icon);
+      }
+    }
+  }
+  .group-hover\:font-medium {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-font-weight: var(--font-weight-medium);
+        font-weight: var(--font-weight-medium);
+      }
+    }
+  }
+  .group-hover\:text-primary {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        color: var(--primary);
+      }
+    }
+  }
+}
+:root {
+  --background: #fbfcfd;
+  --primary: #0c145a;
+  --primary-button: #2b2467;
+  --secondary-button: #e7eaf5;
+  --accent: #7e8cac;
+  --sidebar-active-icon: #4d17e2;
+  --sidebar-indicator: #00baff;
+  --warning: #febd57;
+  --success: #1abc9c;
+  --error: #fe5761;
+}
+@layer base {
+  body {
+    display: flex;
+    width: 1440px;
+    background-color: var(--background);
+    font-family: "Poppins", sans-serif;
+    color: var(--primary);
+  }
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-duration: initial;
+    }
   }
 }
