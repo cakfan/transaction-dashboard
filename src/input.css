@@ -30,6 +30,6 @@
 
 @layer base {
   body {
-    @apply w-[1440px] flex bg-background text-primary font-poppins;
+    @apply relative w-[1440px] flex bg-background text-primary font-poppins;
   }
 }
