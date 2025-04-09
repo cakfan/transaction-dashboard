@@ -7,8 +7,532 @@
 
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-amber-50">
-    <h1 class="text-9xl">Hello World!</h1>
+  <body>
+    <!-- Sidbar -->
+    <aside class="sticky left-0 top-0 w-[290px] h-screen bg-white">
+      <div class="flex flex-col items-center mt-[50px] ml-[65px] mr-[66px]">
+        <div class="h-[90px] w-[90px] rounded-full overflow-hidden">
+          <img
+            src="./assets/images/thumbnails/avatar.png"
+            alt=""
+            class="object-cover"
+          />
+        </div>
+        <h1 class="mt-5 text-xl font-bold leading-[30px]">Shayna Anne</h1>
+        <p class="mt-1 text-[16px] text-accent leading-6">shayna@anne.com</p>
+      </div>
+      <nav class="mt-[52px] ml-[30px]">
+        <ul class="flex flex-col gap-[30px] w-full">
+          <li>
+            <a href="#" class="group w-full flex items-center gap-4 h-[30px]">
+              <div
+                class="relative h-6 w-6 transition-all duration-300 mask-[url('./assets/images/icons/fi_grid.svg')] mask-no-repeat mask-contain bg-accent group-hover:bg-sidebar-active-icon"
+              >
+                <img
+                  src="./assets/images/icons/fi_grid.svg"
+                  alt=""
+                  class="h-6 w-6 opacity-0"
+                />
+              </div>
+              <span
+                class="w-fit text-accent text-lg leading-[27px] transition-all duration-300 group-hover:text-primary group-hover:font-medium"
+              >
+                Overview
+              </span>
+              <span
+                class="ml-auto h-[30px] w-[3px] bg-sidebar-indicator opacity-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group w-full flex items-center gap-4 h-[30px]">
+              <div
+                class="relative h-6 w-6 transition-all duration-300 mask-[url('./assets/images/icons/fi_shopping-bag.svg')] mask-no-repeat mask-contain bg-sidebar-active-icon"
+              >
+                <img
+                  src="./assets/images/icons/fi_shopping-bag.svg"
+                  alt=""
+                  class="h-6 w-6 opacity-0"
+                />
+              </div>
+              <span
+                class="w-fit text-lg leading-[27px] transition-all duration-300 text-primary font-medium"
+              >
+                Transactions
+              </span>
+              <span class="ml-auto h-[30px] w-[3px] bg-sidebar-indicator" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group w-full flex items-center gap-4 h-[30px]">
+              <div
+                class="relative h-6 w-6 transition-all duration-300 mask-[url('./assets/images/icons/fi_message-circle.svg')] mask-no-repeat mask-contain bg-accent group-hover:bg-sidebar-active-icon"
+              >
+                <img
+                  src="./assets/images/icons/fi_message-circle.svg"
+                  alt=""
+                  class="h-6 w-6 opacity-0"
+                />
+              </div>
+              <span
+                class="w-fit text-accent text-lg leading-[27px] transition-all duration-300 group-hover:text-primary group-hover:font-medium"
+              >
+                Messages
+              </span>
+              <span
+                class="ml-auto h-[30px] w-[3px] bg-sidebar-indicator opacity-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group w-full flex items-center gap-4 h-[30px]">
+              <div
+                class="relative h-6 w-6 transition-all duration-300 mask-[url('./assets/images/icons/fi_credit-card.svg')] mask-no-repeat mask-contain bg-accent group-hover:bg-sidebar-active-icon"
+              >
+                <img
+                  src="./assets/images/icons/fi_credit-card.svg"
+                  alt=""
+                  class="h-6 w-6 opacity-0"
+                />
+              </div>
+              <span
+                class="w-fit text-accent text-lg leading-[27px] transition-all duration-300 group-hover:text-primary group-hover:font-medium"
+              >
+                Card
+              </span>
+              <span
+                class="ml-auto h-[30px] w-[3px] bg-sidebar-indicator opacity-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group w-full flex items-center gap-4 h-[30px]">
+              <div
+                class="relative h-6 w-6 transition-all duration-300 mask-[url('./assets/images/icons/fi_award.svg')] mask-no-repeat mask-contain bg-accent group-hover:bg-sidebar-active-icon"
+              >
+                <img
+                  src="./assets/images/icons/fi_award.svg"
+                  alt=""
+                  class="h-6 w-6 opacity-0"
+                />
+              </div>
+              <span
+                class="w-fit text-accent text-lg leading-[27px] transition-all duration-300 group-hover:text-primary group-hover:font-medium"
+              >
+                Rewards
+              </span>
+              <span
+                class="ml-auto h-[30px] w-[3px] bg-sidebar-indicator opacity-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group w-full flex items-center gap-4 h-[30px]">
+              <div
+                class="relative h-6 w-6 transition-all duration-300 mask-[url('./assets/images/icons/fi_settings.svg')] mask-no-repeat mask-contain bg-accent group-hover:bg-sidebar-active-icon"
+              >
+                <img
+                  src="./assets/images/icons/fi_settings.svg"
+                  alt=""
+                  class="h-6 w-6 opacity-0"
+                />
+              </div>
+              <span
+                class="w-fit text-accent text-lg leading-[27px] transition-all duration-300 group-hover:text-primary group-hover:font-medium"
+              >
+                Settings
+              </span>
+              <span
+                class="ml-auto h-[30px] w-[3px] bg-sidebar-indicator opacity-0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="group w-full flex items-center gap-4 h-[30px]">
+              <div
+                class="relative h-6 w-6 transition-all duration-300 mask-[url('./assets/images/icons/fi_power.svg')] mask-no-repeat mask-contain bg-accent group-hover:bg-sidebar-active-icon"
+              >
+                <img
+                  src="./assets/images/icons/fi_power.svg"
+                  alt=""
+                  class="h-6 w-6 opacity-0"
+                />
+              </div>
+              <span
+                class="w-fit text-accent text-lg leading-[27px] transition-all duration-300 group-hover:text-primary group-hover:font-medium"
+              >
+                Log Out
+              </span>
+              <span
+                class="ml-auto h-[30px] w-[3px] bg-sidebar-indicator opacity-0"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- Main -->
+    <main class="pl-[50px] pr-[53px] py-[50px] flex flex-col gap-[30px]">
+      <h1 class="text-[32px] font-bold leading-12 text-primary">
+        My Transactions
+      </h1>
+      <div class="flex flex-col gap-1">
+        <p class="text-lg leading-[27px] text-accent">You've spent</p>
+        <p class="text-[42px] leading-[63px] font-medium text-primary">
+          Rp 4.518.000.500
+        </p>
+      </div>
+      <div class="flex flex-col gap-5">
+        <!-- Tab Menu -->
+        <div class="flex gap-[18px]">
+          <!-- Tab Item 1 -->
+          <div
+            class="tab-item flex items-center justify-center cursor-pointer rounded-[80px] w-[112px] h-10 bg-primary-btn text-white transition-all duration-300 hover:bg-primary-btn hover:text-white"
+          >
+            <h3 class="text-[14.4px] leading-[22px] text-center">All Trx</h3>
+          </div>
+          <!-- Tab Item 2 -->
+          <div
+            class="tab-item flex items-center justify-center cursor-pointer rounded-[80px] w-[112px] h-10 bg-secondary-btn text-primary transition-all duration-300 hover:bg-primary-btn hover:text-white"
+          >
+            <h3 class="text-[14.4px] leading-[22px] text-center">Success</h3>
+          </div>
+          <!-- Tab Item 3 -->
+          <div
+            class="tab-item flex items-center justify-center cursor-pointer rounded-[80px] w-[112px] h-10 bg-secondary-btn text-primary transition-all duration-300 hover:bg-primary-btn hover:text-white"
+          >
+            <h3 class="text-[14.4px] leading-[22px] text-center">Pending</h3>
+          </div>
+          <!-- Tab Item 4 -->
+          <div
+            class="tab-item flex items-center justify-center cursor-pointer rounded-[80px] w-[112px] h-10 bg-secondary-btn text-primary transition-all duration-300 hover:bg-primary-btn hover:text-white"
+          >
+            <h3 class="text-[14.4px] leading-[22px] text-center">Failed</h3>
+          </div>
+        </div>
+
+        <!-- Tab content -->
+        <div
+          class="pl-[30px] pr-[34px] py-2.5 w-[1047px] bg-white rounded-[16px]"
+        >
+          <table class="table-fixed w-full">
+            <thead>
+              <tr class="">
+                <th
+                  class="!w-[231px] text-[16px] py-2.5 leading-6 font-normal text-start"
+                >
+                  Game
+                </th>
+                <th class="!w-[241.5px] text-[16px] leading-6 font-normal">
+                  Item
+                </th>
+                <th class="!w-[203px] text-[16px] leading-6 font-normal">
+                  Price
+                </th>
+                <th class="!w-[195.5px] text-[16px] leading-6 font-normal">
+                  Status
+                </th>
+                <th class="text-[16px] leading-6 font-normal">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <td class="my-2.5 h-[60px] !w-[231px] flex items-center gap-4">
+                  <div
+                    class="h-[60px] w-[80px] shrink-0 rounded-[16px] overflow-clip"
+                  >
+                    <img
+                      src="./assets/images/thumbnails/mobile-legend.png"
+                      alt=""
+                      class="object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-1 flex-col gap-1">
+                    <h2 class="text-[16px] leading-6 font-medium line-clamp-1">
+                      Mobile Legen...
+                    </h2>
+                    <p class="text-[12px] text-accent leading-[18px]">
+                      Desktop
+                    </p>
+                  </div>
+                </td>
+                <td
+                  class="align-middle text-[16px] leading-6 font-medium text-center"
+                >
+                  200 Gold
+                </td>
+                <td class="text-[16px]leading-6 font-medium text-center">
+                  Rp 290.000
+                </td>
+                <td class="">
+                  <div class="pl-[53.5px] flex items-center gap-1.5">
+                    <span class="h-1.5 w-1.5 rounded-full bg-warning"></span>
+                    <span class="!w-[81px] text-[16px] leading-6 font-medium"
+                      >Pending</span
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="flex justify-center items-center">
+                    <a
+                      href="#"
+                      class="tab-item flex items-center justify-center cursor-pointer rounded-[80px] w-[112px] h-10 bg-secondary-btn text-primary transition-all duration-300 hover:bg-primary-btn hover:text-white"
+                    >
+                      <p class="text-[14.4px] leading-[22px] text-center">
+                        Details
+                      </p>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr class="">
+                <td class="my-2.5 h-[60px] w-[231px] flex items-center gap-4">
+                  <div
+                    class="h-[60px] w-[80px] shrink-0 rounded-[16px] overflow-clip"
+                  >
+                    <img
+                      src="./assets/images/thumbnails/cod.png"
+                      alt=""
+                      class="object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-[16px] leading-6 font-medium line-clamp-1">
+                      Call Of Duty Ne...
+                    </h2>
+                    <p class="text-[12px] text-accent leading-[18px]">
+                      Desktop
+                    </p>
+                  </div>
+                </td>
+                <td
+                  class="align-middle text-[16px] leading-6 font-medium text-center"
+                >
+                  550 Gold
+                </td>
+                <td class="text-[16px] leading-6 font-medium text-center">
+                  Rp 740.000
+                </td>
+                <td>
+                  <div class="pl-[53.5px] flex items-center gap-1.5">
+                    <span class="h-1.5 w-1.5 rounded-full bg-success"></span>
+                    <span class="text-[16px] leading-6 font-medium"
+                      >Success</span
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="flex justify-center items-center">
+                    <a
+                      href="#"
+                      class="tab-item flex items-center justify-center cursor-pointer rounded-[80px] w-[112px] h-10 bg-secondary-btn text-primary transition-all duration-300 hover:bg-primary-btn hover:text-white"
+                    >
+                      <p class="text-[14.4px] leading-[22px] text-center">
+                        Details
+                      </p>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr class="">
+                <td class="my-2.5 h-[60px] w-[231px] flex items-center gap-4">
+                  <div
+                    class="h-[60px] w-[80px] shrink-0 rounded-[16px] overflow-clip"
+                  >
+                    <img
+                      src="./assets/images/thumbnails/coc.png"
+                      alt=""
+                      class="object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-[16px] leading-6 font-medium line-clamp-1">
+                      Clash of Clans
+                    </h2>
+                    <p class="text-[12px] text-accent leading-[18px]">Mobile</p>
+                  </div>
+                </td>
+                <td
+                  class="align-middle text-[16px] leading-6 font-medium text-center"
+                >
+                  100 Gold
+                </td>
+                <td class="text-[16px] leading-6 font-medium text-center">
+                  Rp 120.000
+                </td>
+                <td>
+                  <div class="pl-[53.5px] flex items-center gap-1.5">
+                    <span class="h-1.5 w-1.5 rounded-full bg-error"></span>
+                    <span class="text-[16px] leading-6 font-medium"
+                      >Failed</span
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="flex justify-center items-center">
+                    <a
+                      href="#"
+                      class="tab-item flex items-center justify-center cursor-pointer rounded-[80px] w-[112px] h-10 bg-secondary-btn text-primary transition-all duration-300 hover:bg-primary-btn hover:text-white"
+                    >
+                      <p class="text-[14.4px] leading-[22px] text-center">
+                        Details
+                      </p>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr class="">
+                <td class="my-2.5 h-[60px] w-[231px] flex items-center gap-4">
+                  <div
+                    class="h-[60px] w-[80px] shrink-0 rounded-[16px] overflow-clip"
+                  >
+                    <img
+                      src="./assets/images/thumbnails/the-royale.png"
+                      alt=""
+                      class="object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-[16px] leading-6 font-medium line-clamp-1">
+                      The Royale Ga...
+                    </h2>
+                    <p class="text-[12px] text-accent leading-[18px]">
+                      Desktop
+                    </p>
+                  </div>
+                </td>
+                <td
+                  class="align-middle text-[16px] leading-6 font-medium text-center"
+                >
+                  225 Gold
+                </td>
+                <td class="text-[16px] leading-6 font-medium text-center">
+                  Rp 200.000
+                </td>
+                <td>
+                  <div class="pl-[53.5px] flex items-center gap-1.5">
+                    <span class="h-1.5 w-1.5 rounded-full bg-warning"></span>
+                    <span class="text-[16px] leading-6 font-medium"
+                      >Pending</span
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="flex justify-center items-center">
+                    <a
+                      href="#"
+                      class="tab-item flex items-center justify-center cursor-pointer rounded-[80px] w-[112px] h-10 bg-secondary-btn text-primary transition-all duration-300 hover:bg-primary-btn hover:text-white"
+                    >
+                      <p class="text-[14.4px] leading-[22px] text-center">
+                        Details
+                      </p>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr class="">
+                <td class="my-2.5 h-[60px] w-[231px] flex items-center gap-4">
+                  <div
+                    class="h-[60px] w-[80px] shrink-0 rounded-[16px] overflow-clip"
+                  >
+                    <img
+                      src="./assets/images/thumbnails/cod.png"
+                      alt=""
+                      class="object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-[16px] leading-6 font-medium line-clamp-1">
+                      Call Of Duty Ne...
+                    </h2>
+                    <p class="text-[12px] text-accent leading-[18px]">
+                      Desktop
+                    </p>
+                  </div>
+                </td>
+                <td
+                  class="align-middle text-[16px] leading-6 font-medium text-center"
+                >
+                  550 Gold
+                </td>
+                <td class="text-[16px] leading-6 font-medium text-center">
+                  Rp 740.000
+                </td>
+                <td>
+                  <div class="pl-[53.5px] flex items-center gap-1.5">
+                    <span class="h-1.5 w-1.5 rounded-full bg-success"></span>
+                    <span class="text-[16px] leading-6 font-medium"
+                      >Success</span
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="flex justify-center items-center">
+                    <a
+                      href="#"
+                      class="tab-item flex items-center justify-center cursor-pointer rounded-[80px] w-[112px] h-10 bg-secondary-btn text-primary transition-all duration-300 hover:bg-primary-btn hover:text-white"
+                    >
+                      <p class="text-[14.4px] leading-[22px] text-center">
+                        Details
+                      </p>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+              <tr class="">
+                <td class="my-2.5 h-[60px] w-[231px] flex items-center gap-4">
+                  <div
+                    class="h-[60px] w-[80px] shrink-0 rounded-[16px] overflow-clip"
+                  >
+                    <img
+                      src="./assets/images/thumbnails/mobile-legend.png"
+                      alt=""
+                      class="object-cover"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-[16px] leading-6 font-medium line-clamp-1">
+                      Mobile Legen...
+                    </h2>
+                    <p class="text-[12px] text-accent leading-[18px]">
+                      Desktop
+                    </p>
+                  </div>
+                </td>
+                <td
+                  class="align-middle text-[16px] leading-6 font-medium text-center"
+                >
+                  200 Gold
+                </td>
+                <td class="text-[16px] leading-6 font-medium text-center">
+                  Rp 290.000
+                </td>
+                <td>
+                  <div class="pl-[53.5px] flex items-center gap-1.5">
+                    <span class="h-1.5 w-1.5 rounded-full bg-warning"></span>
+                    <span class="text-[16px] leading-6 font-medium"
+                      >Pending</span
+                    >
+                  </div>
+                </td>
+                <td>
+                  <div class="flex justify-center items-center">
+                    <a
+                      href="#"
+                      class="tab-item flex items-center justify-center cursor-pointer rounded-[80px] w-[112px] h-10 bg-secondary-btn text-primary transition-all duration-300 hover:bg-primary-btn hover:text-white"
+                    >
+                      <p class="text-[14.4px] leading-[22px] text-center">
+                        Details
+                      </p>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
     <script src="./js/main.js"></script>
   </body>
 </html>
