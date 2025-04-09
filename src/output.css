@@ -182,6 +182,9 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
+  }
   .my-2\.5 {
     margin-block: calc(var(--spacing) * 2.5);
   }
@@ -217,6 +220,12 @@
   }
   .flex {
     display: flex;
+  }
+  .table {
+    display: table;
+  }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
   }
   .h-1\.5 {
     height: calc(var(--spacing) * 1.5);
@@ -257,6 +266,9 @@
   .\!w-\[241\.5px\] {
     width: 241.5px !important;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\.5 {
     width: calc(var(--spacing) * 1.5);
   }
@@ -290,8 +302,14 @@
   .max-w-\[1440px\] {
     max-width: 1440px;
   }
+  .\!min-w-\[231px\] {
+    min-width: 231px !important;
+  }
   .flex-1 {
     flex: 1;
+  }
+  .flex-shrink {
+    flex-shrink: 1;
   }
   .shrink-0 {
     flex-shrink: 0;
@@ -299,8 +317,14 @@
   .table-fixed {
     table-layout: fixed;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -343,6 +367,10 @@
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .bg-accent {
     background-color: var(--accent);
@@ -398,8 +426,14 @@
   .mask-no-repeat {
     mask-repeat: no-repeat;
   }
+  .mask-repeat {
+    mask-repeat: repeat;
+  }
   .object-cover {
     object-fit: cover;
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
@@ -510,8 +544,15 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-0 {
     opacity: 0%;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .transition-all {
     transition-property: all;
@@ -586,6 +627,11 @@
 .custom-scrollbar::-webkit-scrollbar {
   display: none;
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-leading {
   syntax: "*";
   inherits: false;
@@ -594,6 +640,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -601,8 +652,10 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
       --tw-duration: initial;
     }
   }
