@@ -9,6 +9,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-lg: 1.125rem;
@@ -337,8 +338,29 @@
   .\!min-w-\[231px\] {
     min-width: 231px !important;
   }
+  .\!min-w-\[232px\] {
+    min-width: 232px !important;
+  }
+  .\!min-w-\[234px\] {
+    min-width: 234px !important;
+  }
+  .\!min-w-\[236px\] {
+    min-width: 236px !important;
+  }
+  .\!min-w-\[238\.5px\] {
+    min-width: 238.5px !important;
+  }
+  .\!min-w-\[240\.5px\] {
+    min-width: 240.5px !important;
+  }
+  .\!min-w-\[240px\] {
+    min-width: 240px !important;
+  }
   .\!min-w-\[241\.5px\] {
     min-width: 241.5px !important;
+  }
+  .\!min-w-\[241px\] {
+    min-width: 241px !important;
   }
   .min-w-\[195\.5px\] {
     min-width: 195.5px;
@@ -348,6 +370,9 @@
   }
   .min-w-\[230px\] {
     min-width: 230px;
+  }
+  .min-w-\[232px\] {
+    min-width: 232px;
   }
   .min-w-\[1047px\] {
     min-width: 1047px;
@@ -425,6 +450,9 @@
   .border-dashed {
     --tw-border-style: dashed;
     border-style: dashed;
+  }
+  .border-green-500 {
+    border-color: var(--color-green-500);
   }
   .border-red-500 {
     border-color: var(--color-red-500);
