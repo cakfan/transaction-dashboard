@@ -33,3 +33,13 @@
     @apply relative flex bg-background text-primary font-poppins;
   }
 }
+
+/* Sembunyikan scrollbar di Firefox */
+.custom-scrollbar {
+  scrollbar-width: none; /* Menghilangkan scrollbar di Firefox */
+}
+
+/* Sembunyikan scrollbar di Chrome, Edge, Safari */
+.custom-scrollbar::-webkit-scrollbar {
+  display: none; /* Menghilangkan scrollbar di WebKit-based browsers */
+}
